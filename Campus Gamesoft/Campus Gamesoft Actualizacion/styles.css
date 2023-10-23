@@ -90,3 +90,7 @@ a:hover {
     width: 80px;
     border-radius: 50%;
 }
+body {
+    background-image: url(./IMAGES/fondoInicio2.jpg);
+    background-size: cover;
+}

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./IMAGES/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    height:6rem;
+    width: 100%;
+    box-shadow: 0 10px 30px rgb(0, 0,0,.3);
+}
+ul li {
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding-left: 50px;
+    padding-right: 41px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+ul li:last-child{
+    border-right: none;
+}
+ul li a .icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+}
+ul li a .icon .fa-solid{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+}
+a{
+    color: #dcc25a;
+}
+a:hover {
+    color: #2b33c5;
+}
+#user{
+    margin-left: 20px;
+}
+#game{
+    margin-left: 30px;
+}
+#cart{
+    margin-left: 10px;
+}
+#contac{
+    margin-left: 25px;
+}
+.iconoPag{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 200px;
+}
+.iconoPag h1 {
+    padding-left: 20px;
+    font-family: 'Silkscreen', sans-serif;
+    animation: flicker 1.5s infinite alternate;
+    color: #353e8d;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%,100% {
+        text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(61, 119, 201),
+        0 0 82px rgb(61, 119, 201),
+        0 0 92px rgb(61, 119, 201),
+        0 0 102px rgb(61, 119, 201),
+        0 0 152px rgb(61, 119, 201)
+    }
+    20%,24%,55% {
+        text-shadow: none;
+    }
+  }
+.icono {
+    width: 80px;
+    border-radius: 50%;
+}
+main{
+    min-height: 120vh;
+    padding-top: 6rem;
+}
+.titulos {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    margin-left: 10%;
+    background-color: #353e8d4b;
+    border-radius: 20px;
+}
+.titulos h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    color: #6964ad;
+    text-shadow: 2px 2px 4px #fff;
+}
+.titulos h3 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    color: #fff;
+    text-shadow: 2px 2px #570857;
+}
+ img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5rem;
+    vertical-align: middle;
+    margin-left: 35px;
+}
+.clientes {
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    width: 78vw;
+    background-color: #fff5;
+    margin-left: 10%;
+    padding-bottom: 15px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem  .8rem #0005;
+}
+thead {
+    width: 100%;
+    background-color: #784ba067;
+    border-radius: 20px;
+}
+.contendor-cliente {
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+tr th {
+    align-items: center;
+}
+th {
+    padding: 25px;
+}
+td {
+    width: 100%;
+}
+tr td{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+tr th {
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 17px;
+}
+#editar {
+    background-color: #dcc25a;
+    border: 0;
+}
+#styleEliminar{
+    background-color: red;
+    color: #fff;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+.botones {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.botones #buscador {
+    margin-left: 900px;
+    height: 35px;
+    border-radius: 20px;
+    border: #fff solid;
+    padding: 15px;
+}
+#buscar {
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding:  0 15px;
+    margin-left: 10px;
+}
+#estilosAgregar {
+    background-color: #FF3CAC;
+    border: #fff;
+}

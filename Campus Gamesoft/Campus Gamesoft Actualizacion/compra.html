@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Videojuegos</title>
+    <link rel="stylesheet" href="compra.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <div class="iconoPag">
+            <img src="./IMAGES/icono.jpg" alt="icono" class="icono">
+            <h1>Campus GameSoft</h1>
+            </div>
+            <li>
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-house fa-bounce" style="color: #ffff;" ></i>
+                    </div>
+                    <div class="name">Inicio</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="gestion.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-user fa-bounce" style= "color: #ffff;"id="user"></i>
+                    </div>
+                    <div class="name">Clientes</div>
+                </a>
+            </li>
+            <li>
+                <a href="gestionJuegos.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-gamepad fa-bounce" style="color: #ffff; " id="game"></i>
+                    </div>
+                    <div class="name">Videojuegos</div>
+                </a>
+            </li>
+            <li>
+                <a href="compra.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #ffff;" id="cart"></i>
+                    </div>
+                    <div class="name">Compra</div>
+                </a>
+            </li>
+            <li>
+                <a href="ingresar.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope fa-bounce" style="color: #ffff;" id="contac"></i>
+                    </div>
+                    <div class="name">Contacto</div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <h2>Venta de Juegos</h2>
+        <div id="buscar-cliente">
+            <label for="">Ingrese el id del Cliente:</label>
+            <input type="text" placeholder="id">
+            <button id="BuscarCliente">Buscar</button>
+        </div>
+        <div id="buscar-juego">
+            <label for="">Ingrese el id del Juego:</label>
+            <input type="text" placeholder="id">
+            <button id="BuscarJuego">Buscar</button>
+        </div>
+        <div id="comprar">
+            <div class="titulo-cliente">
+                <h1>Lista de Clientes</h1>
+                <div id="client-container">
+
+                </div>
+            </div>
+            <!-- Aca se muestra una card con la informacion del cliente que  -->
+            <!--Aca la del juego-->
+            <div class="titulo">
+                <h1>Lista de Juegos</h1>
+                <div id="game-container">
+
+                </div>
+            </div>
+            <!--Aca se sume con el precio-->
+            <div id="total">
+                <div id="info-client">
+                    
+                </div>
+                <div id="sumatoria">
+                
+                </div>
+                <button id="comprar-btn">Comprar</button>
+            </div>
+        </div>
+    </main>
+    <script src="./compra.js"></script>
+    <script src="https://kit.fontawesome.com/22c65168a6.js" crossorigin="anonymous"></script>
+</body>
+</html>

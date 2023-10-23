@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="juegos.css">
+    <title>Gestion de Videjuegos</title>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <div class="iconoPag">
+            <img src="./IMAGES/icono.jpg" alt="icono" class="icono">
+            <h1>Campus GameSoft</h1>
+            </div>
+            <li>
+                <a href="index.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-house fa-bounce" style="color: #ffff;" ></i>
+                    </div>
+                    <div class="name">Inicio</div>
+                </a>
+            </li>
+
+            <li>
+                <a href="gestion.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-user fa-bounce" style= "color: #ffff;"id="user"></i>
+                    </div>
+                    <div class="name">Clientes</div>
+                </a>
+            </li>
+            <li>
+                <a href="gestionJuegos.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-gamepad fa-bounce" style="color: #ffff; " id="game"></i>
+                    </div>
+                    <div class="name">Videojuegos</div>
+                </a>
+            </li>
+            <li>
+                <a href="compra.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #ffff;" id="cart"></i>
+                    </div>
+                    <div class="name">Compra</div>
+                </a>
+            </li>
+            <li>
+                <a href="ingresar.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope fa-bounce" style="color: #ffff;" id="contac"></i>
+                    </div>
+                    <div class="name">Contacto</div>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+    <h1 class="tituloPrin">Gestion de Juegos</h1>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="estilosButton">Agregar Juego</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Videojuego</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label">Ingrese Nombre</label>
+                <input type="text" class="form-control" id="nombre"></input>
+            </div>
+            <div class="modal-body">
+                <form>
+                <div class="mb-3">
+                    <label for="message-text" class="col-form-label">Ingrese el Url Imagen del videojuego</label>
+                    <input type="text" class="form-control" id="imagen"></input>
+                </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Elija Tematica</label>
+                <select id="tematica">
+                    <option value="0">Aventura</option>
+                    <option value="1">Ciencia Ficcion</option>
+                    <option value="2">Fantasia</option>
+                    <option value="3">Terror</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label">Ingrese valor licencia</label>
+                <input type="number" class="form-control" id="licencia"></input>
+            </div>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Puntos:</label>
+                <input type="number" class="form-control" id="puntos"></input>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="agregar">Agregar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="containerCards" class="container-cards">
+    <!--            <div class="card-character">
+                    <img class="img" src="" alt="maquetacion-images">
+                    <div class="description-card">
+                        <h2>Rick and Morty</h2>
+                        <p>Gender: Male</p>
+                    </div> -->
+                </div>
+    </main>
+    <footer></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/22c65168a6.js" crossorigin="anonymous"></script>
+<script src="./gestionJuegos.js"></script>
+</html>
